@@ -81,14 +81,27 @@
 // console.log(typeof compte1);
 // console.log(compte1);
 
-class compte{
-    numero;
-    solde;
+// class compte{
+//     numero;
+//     solde;
+//     // constructor
+//     constructor(n) {
+//         this.numero = n;
+//         this.solde = 50;
+//     } 
+//     // methode
+//     crediter(montant){
+//         this.solde += montant;
+//     }  
+// }
+// let compteA = new compte(001);
+// console.log(compteA);
 
-    constructor(n) {
-        this.numero = n;
-        this.solde = 50;
-    }   
-}
-let compteA = new compte(001);
-console.log(compteA)
+// compteA.crediter(5000)
+
+// JSON = javascript Object Notation
+let personne = new Object();
+personne.prenom = "joachin"
+personne.age = 52;
+
+console.log(personne);
