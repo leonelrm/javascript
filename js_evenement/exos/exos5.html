@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <h1 onclick="this.innerHTML='oupps!'"> my webpage JS </h1>
+    </header>
+    <div id="image1">
+        <img src="../img/elephant-5495430_640.jpg" alt="image1" width="300" onmouseover='src = "../img/kingfisher-5546610_640.jpg";' onmouseout='src = "../img/elephant-5495430_640.jpg";'>
+    </div>
+    <div id="image2">
+        <img src="../img/kingfisher-5546610_640.jpg"  alt="image2" width="300px" >
+    </div>
+    <div>
+        <form action="">
+            <label>Nom</label>
+            <input type="text" id="inputnom">
+            <input type="button" value="OK" onclick = "affiche()">
+        </form>
+        <p id=" affichemessage">
+        </p>
+    </div>
+    <div>
+
+    </div>
+
+
+<script>
+    function affiche(){
+        var prenom = document.getElementById("inputnom").value;
+        document.getElementById(" affichemessage").innerHTML = "Bonjour " + prenom +  " bienvenue";
+
+    }
+</script>
+</body>
+</html>

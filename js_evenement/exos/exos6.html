@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>SURFACE D'UN RECTANGLE</title>
+    <style>
+        .input{ display: flex; align-items: center ; ;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Surface d'un rectangle</h1>
+        <hr>
+    </header>
+    <section style="text-align: center;">
+        <div>
+            <form action="">
+                <label>Longueur:</label>
+                <input type="number" id="Longueur">
+                <p id="messLongueur"  ></p>
+                <label> Largeur : </label>
+                <input type="number" id="Largeur">
+                <p id="messLargeur" ></p>
+            </form>
+            
+        </div>
+        <div>
+            <input type="button" value="Calculer" onclick = "calcul()">
+            <label  id="resultat" style ="width: 180px; height: 20px; border: 1px solid black;"></label>
+        </div>
+    </section>
+
+    <footer>
+    <script>
+         function calcul() {
+             let a = document.getElementById("Longueur").value;
+             let b = document.getElementById("Largeur").value;
+             if (a<=0){
+                 document.getElementById("messLongueur").innerHTML ="vous devez entrez la longueur"
+
+             }else if (b<=0){
+                 document.getElementById("messLargeur").innerHTML ="vous devez entrez la largeur"
+             }else {
+                 let c = a * b;
+                 
+                 document.getElementById("resultat").innerHTML = "la surface est" + c + "mt2";
+             }
+         }
+
+    </script>
+
+    </footer>
+</body>
+</html>
