@@ -161,7 +161,7 @@
 
 // tableau
 
- let tab = ["banane",'pomme', 3, 'abricot', 5];
+// let tab = ["banane",'pomme', 3, 'abricot', 5];
 // tab.sort();
 
 // for (let i = 0; i < tab.length; i++) {  
@@ -199,10 +199,38 @@
 //     maVal => console.log(maVal)
 // );
 
-var personne = {
-    firstname : "john",
-    lastname : "lecodeur",
-    age : 40
+// var personne = {
+//     firstname : "john",
+//     lastname : "lecodeur",
+//     age : 40
+// }
+
+// console.log(personne);
+
+// function abracadabra(){
+//     let prenom = prompt("quel est votre prenom : ");
+//     let nom = prompt("quel est votre nom : ");
+//     let age = prompt("quel est votre age : ");
+//     let resultat = alert("Sapristi! On ne m'avait pas prévenu que c'était vous, " + prenom + "! Euh...Je veut dire...Monsieur le grand magicien  " + nom + "! cela fait déjà " + age + " ans que vous faites rayonner notre comtreé");
+//     return resultat; 
+// }
+// abracadabra();
+
+function IMC(a, b){
+    a = Number(prompt("quel est votre Taille en M?"));
+    b = Number(prompt("quel est votre Poids en KG?"));
+    let c= b / a**2;    
+    if(c<18.5){
+        alert("vous etes en UNDERWEIGHT");
+    }else if(c>=18.5 && c<=24.9){
+        alert("vous etes NORMAL");
+    }else if(c>=25 && c<=29.9){
+        alert("vous etes en OVERWEIGHT");
+    }else if(c>= 30 && c<=34.9){
+        alert("vous etes en OBESITE");
+    }else{
+        alert("you are EXTREMLY OBESE");
+    }
 }
 
-console.log(personne);
+IMC();
